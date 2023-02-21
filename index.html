@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>KNIGHT MOVES</title>
+   <link rel="stylesheet" href="style.css">
+   <script src="app3.js"></script>
+</head>
+<body>
+   <div id="container">
+      <div id="header"></div>
+      <div id="input" class="info">
+         <h3>Starting Coordinates</h3>
+         <div id="first">
+            <input type="number" name="" id="f1"  min="0" max="7">
+         </div>
+         <div id="second">
+            <input type="number" name="" id="f2" min="0" max="7">
+         </div>
+         <h3>Ending Coordinates</h3>
+         <div id="first">
+            <input type="number" name="" id="e1" min="0" max="7">
+         </div>
+         <div id="second">
+            <input type="number" name="" id="e2" min="0" max="7">
+         </div>
+         <div id="buttons">
+            <button id="run">GO</button>
+         <button id="clear" onclick="window.location.reload(body)">CLEAR</button>
+         </div>  
+      </div>
+      <div id="board"></div>
+      <div id="output" class="info"></div>
+      <div id="footer">
+         
+      </div>
+   </div>
+</body>
+</html>

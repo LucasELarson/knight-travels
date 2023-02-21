@@ -1,0 +1,85 @@
+body{
+   margin: 0px;
+   overflow: hidden;
+}
+
+input{
+   width: 95%;
+}
+#container{
+   display: grid;
+   height: 100vh;
+   width: 100vw;
+   grid-template-rows: 1fr 8fr 1fr;
+   grid-template-columns: 1fr 2fr 1fr;
+   background-color: rgb(47, 47, 47);
+   align-items: center;
+   justify-items: center;
+}
+
+#header{
+   background-color: grey;
+   grid-column: 1/4;
+}
+
+#board{
+   display: grid;
+   grid-template-columns: repeat(8, 1fr);
+   grid-template-rows: repeat(8, 1fr);
+   grid-column: 2/3;
+   grid-row: 2;
+   height: 50vw;
+   width: 50vw;
+}
+
+.info{
+   display: grid;
+   grid-row: 2;
+   background-color: white;
+   width: 75%;
+   height: 75%;
+   border: 10px;
+   border-radius: 10px;
+   border-color: darkgrey;
+   border-style: solid;
+}
+
+#input{
+   grid-column: 1;
+   justify-content: center;
+   align-content: space-around;
+}
+#output{
+   grid-column: 3;
+    grid-template-columns: 1fr 1fr;
+    height: 75%;
+    justify-items: center;
+}
+
+#outputdiv{
+   display: grid;
+   justify-items: center;
+}
+
+.black{
+   background-color: black;
+}
+
+.white{
+   background-color: white;
+}
+
+
+#footer{
+   background-color: grey;
+   grid-column: 1/4;
+}
+
+button{
+   height: 100%  ;
+}
+
+#buttons{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
